@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghavendra Builders</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      background-color: #eef2f6;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #1f3c88, #2c5aa0);
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #ffffff;
+      text-align: center;
+      padding: 90px 20px;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+    .hero h2, .hero p {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h2 {
+      font-size: 2.3rem;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 1.15rem;
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+    }
+    nav {
+      background-color: #1f3c88;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    .section h2 {
+      color: #1f3c88;
+      margin-bottom: 15px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .service-box {
+      background-color: #f1f5fb;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .menu-icon {
+      font-size: 26px;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+    .menu-links {
+      display: flex;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+      .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1f3c88;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .menu-links a {
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+      }
+    }footer {
+  background-color: #1f3c88;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+  </style>
+</head>
+<body>  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu-links');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+      }
+    }
+  </script>  <header>
+    <h1>Raghavendra Builders</h1>
+    <p>40+ Years of Trusted Construction Excellence</p>
+  </header>  <section class="hero">
+    <h2>Quality Home Construction You Can Trust</h2>
+    <p>Residential & Commercial Buildings • Strong Materials • Vaasthu Based Homes</p>
+  </section>  <nav>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <div class="menu-links">
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>  <div class="container"><section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    Raghavendra Builders is a trusted construction company committed to delivering
+    high-quality residential and commercial projects. With a strong focus on
+    durability, design, and customer satisfaction, we bring your construction
+    ideas to life with professionalism and care.
+  </p>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-box">
+      <h3>Residential Construction</h3>
+      <p>Construction of independent houses, villas, and apartments using quality-approved materials and skilled workmanship.</p>
+    </div>
+    <div class="service-box">
+      <h3>Commercial Construction</h3>
+      <p>Shops, offices, godowns, and commercial buildings designed for strength, safety, and long-term use.</p>
+    </div>
+    <div class="service-box">
+      <h3>All Materials Supply</h3>
+      <p>We handle complete material selection including cement, steel, bricks, sand, electrical, plumbing, and finishing items.</p>
+    </div>
+    <div class="service-box">
+      <h3>Tiles & Flooring Works</h3>
+      <p>Expert installation of tiles, marble, granite, and all types of flooring with perfect finishing.</p>
+    </div>
+    <div class="service-box">
+      <h3>Vaasthu Based Construction</h3>
+      <p>Building plans and execution strictly following Vaasthu principles for peace, prosperity, and positive energy.</p>
+    </div>
+    <div class="service-box">
+      <h3>Renovation & Remodeling</h3>
+      <p>Old building renovation, repairs, extensions, and modern remodeling solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2>Our Experience</h2>
+  <p>
+    With <strong>40+ years of experience</strong> in the construction industry, Raghavendra Builders has successfully completed
+    numerous residential and commercial projects. Our long-standing expertise ensures strong structures, quality materials,
+    proper planning, and customer satisfaction.
+  </p>
+  <p>
+    We specialize in end-to-end construction services including material selection, tiles and flooring works,
+    and Vaasthu-compliant building practices, delivering reliable and trustworthy results for every project.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <div class="contact-details">
+    <p><strong>Contact Person:</strong> Senthil</p>
+    <p><strong>Phone:</strong> 9788187441</p>
+    <p><strong>Address:</strong><br>
+      24, Perumal Kovil Street,<br>
+      Krishnapuram, Madathukulam,<br>
+      Tiruppur District, Tamil Nadu
+    </p>
+  </div>
+</section>
+
+  </div>  <footer>
+    <p>&copy; 2026 Raghavendra Builders. All Rights Reserved.</p>
+  </footer></body>
+</html>
